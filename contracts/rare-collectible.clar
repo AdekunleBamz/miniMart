@@ -82,3 +82,6 @@
         (asserts! (is-eq tx-sender CONTRACT-OWNER) ERR-NOT-AUTHORIZED)
         (var-set base-uri new-uri)
         (ok true)))
+
+(define-read-only (get-contract-owner)
+    (ok CONTRACT-OWNER))
